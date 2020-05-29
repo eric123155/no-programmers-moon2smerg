@@ -13,4 +13,3 @@ MonoBehaviour:
   m_Name: New Goal Item
   m_EditorClassIdentifier: 
   worldItemObject: {fileID: 0}
-  Contains: 0
