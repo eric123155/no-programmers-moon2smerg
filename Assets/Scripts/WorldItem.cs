@@ -6,11 +6,9 @@ public class WorldItem : MonoBehaviour
 {
     public Item item;
 
-    private void OnTriggerEnter(Collider other) 
+    public void OnPickup() 
     {
-        if (other.tag == "Player") 
-        {
-            Debug.Log("Test");
-        }
+        item.OnPickup();
+        GoalChecker.onItemPickup?.Invoke();
     }
 }

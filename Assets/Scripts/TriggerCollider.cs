@@ -5,26 +5,17 @@ using UnityEngine.Events;
 
 public class TriggerCollider : MonoBehaviour
 {
-    public string tag;
+    public new string tag = "";
+    public bool useTag = false;
     public UnityEvent onTrigger = new UnityEvent();
-    public UnityEvent onTagTrigger = new UnityEvent();
-
-    void Start()
-    {
-        
-    }
-
 
     private void OnTriggerEnter(Collider other)
     {
-        if (tag.Length > 0)
+        if (useTag) 
         {
-            if (other.tag == "Player")
-            {
+            if (other.tag == tag)
                 onTrigger?.Invoke();
-                Debug.Log("Test");
-            }
         }
-        else Debug.Log("Something Triggered");
+        else onTrigger?.Invoke();
     }
 }

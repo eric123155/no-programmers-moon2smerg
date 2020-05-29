@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8340625448562365880}
   - component: {fileID: 161267693087762394}
+  - component: {fileID: 935567255636894204}
   m_Layer: 0
   m_Name: TriggerCollider
   m_TagString: Untagged
@@ -39,11 +40,61 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159104421231394574}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &935567255636894204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159104421231394574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037e8aea99f7e1945a6ed1f1db506fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tag: 
+  useTag: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2892838884471300440}
+        m_MethodName: StartShrink
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 159104421231394574}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6223162773327141739}
+        m_MethodName: OnPickup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4929340100026142862
 GameObject:
   m_ObjectHideFlags: 0
@@ -54,6 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3548777590134602940}
   - component: {fileID: 6223162773327141739}
+  - component: {fileID: 2892838884471300440}
   m_Layer: 0
   m_Name: ItemTemplate
   m_TagString: Untagged
@@ -88,3 +140,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 650df0f6af9545c438f13a0b1a1f6d99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 0}
+--- !u!114 &2892838884471300440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4929340100026142862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87d3f8f1f0e9264fbbd81ed98c44092, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToShrink: 2
