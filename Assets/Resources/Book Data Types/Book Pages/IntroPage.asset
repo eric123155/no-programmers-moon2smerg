@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d13af81b9fa496d46a9da62083473d5e, type: 3}
-  m_Name: PurityPage
+  m_Name: IntroPage
   m_EditorClassIdentifier: 
-  pageName: Purity of Body, Mind & Soul
-  pageContent: No foul adornments and no foul words should leave your mouth. Your
-    quest should be singular and pure, like the iron that the Brotherhood adorns
-    themselves with.
+  pageName: The Holy Book Of Mormoon 2
+  pageContent: It is these core tenets of our faith that we must always hold high,
+    for they are permitted our predecessors to achieve victory in their Hellwalk
+    here.

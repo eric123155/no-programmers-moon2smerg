@@ -9,6 +9,5 @@ public class WorldItem : MonoBehaviour
     public void OnPickup() 
     {
         item.OnPickup();
-        GoalChecker.onItemPickup?.Invoke();
     }
 }

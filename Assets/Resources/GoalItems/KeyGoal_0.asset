@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f774c9810cb369b4c9a1ac517421324d, type: 3}
-  m_Name: New Goal Item
+  m_Name: KeyGoal_0
   m_EditorClassIdentifier: 
   worldItemObject: {fileID: 0}

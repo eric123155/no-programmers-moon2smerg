@@ -5,8 +5,12 @@ using UnityEngine.Events;
 
 public class TriggerCollider : MonoBehaviour
 {
-    public new string tag = "";
     public bool useTag = false;
+    public bool useInput = false;
+    [Space]
+    public new string tag = "";
+    public KeyCode input;
+    [Space]
     public UnityEvent onTrigger = new UnityEvent();
 
     private void OnTriggerEnter(Collider other)
