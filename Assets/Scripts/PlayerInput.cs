@@ -21,10 +21,9 @@ public class PlayerInput : MonoBehaviour
         
     }
 
-    void FixedUpdate()
+    void LateUpdate()
     {
         Vector3 moveDirection = (transform.forward * _v) + transform.right *  _h;
-        //GetComponent<CharacterController>().Move(movement);
         GetComponent<CharacterController>().SimpleMove(moveDirection.normalized * speed);
     }
 

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13af81b9fa496d46a9da62083473d5e, type: 3}
+  m_Name: TheLowerCastePage
+  m_EditorClassIdentifier: 
+  pageName: The Lower Caste
+  pageContent: Those who bask in Brotherhood are held responsible for the ultimate
+    shaping of the lower caste, Serf or Acolyte both. Their hardships will mould
+    them like clay, permitting them to become the firm brick of a contributing member
+    of society.
