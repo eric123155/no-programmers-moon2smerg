@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class GoalItem : Item
+public class GameStage : ScriptableObject
 {
     public bool Satified { get; private set; } = false;
 
-    public override void OnPickup() 
+    public void Invoke()
     {
         Satified = true;
+        GameStageChecker.onGameStage?.Invoke();
     }
 
-    public void OnDisable() 
+    public void OnDisable()
     {
         Satified = false;
     }
