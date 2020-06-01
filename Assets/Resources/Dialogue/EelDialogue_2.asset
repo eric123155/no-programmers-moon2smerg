@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1c26c4250875149a314fef45a07d9d, type: 3}
   m_Name: EelDialogue_2
   m_EditorClassIdentifier: 
-  content: '- pooping on serfs, disrupting court whilst paddling a boat, pouring
-    lava on your fellow Brothers during a play, throwing eggs at the battling serfs
-    in the arena--and so on.'
-  timeWaitPerLetter: 0.1
-  timeWaitAfterFinished: 0
+  content: '- pouring lava on your fellow Brothers during a play, throwing eggs at
+    the battling serfs in the arena--and so on.'
+  timeWaitPerLetter: 0.05
+  timeWaitAfterFinished: 1
   clipPerLetter: {fileID: 8300000, guid: c41edc77538a38545b03981ae10eb87e, type: 3}

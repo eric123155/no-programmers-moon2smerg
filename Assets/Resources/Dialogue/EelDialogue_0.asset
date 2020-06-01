@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   content: Welcome subject 96, to your final resting place.
   timeWaitPerLetter: 0.05
-  timeWaitAfterFinished: 2.5
+  timeWaitAfterFinished: 1
   clipPerLetter: {fileID: 8300000, guid: c41edc77538a38545b03981ae10eb87e, type: 3}

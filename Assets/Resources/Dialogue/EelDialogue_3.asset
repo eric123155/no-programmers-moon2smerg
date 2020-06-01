@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: EelDialogue_3
   m_EditorClassIdentifier: 
   content: 
-  timeWaitPerLetter: 0
-  timeWaitAfterFinished: 0
+  timeWaitPerLetter: 0.05
+  timeWaitAfterFinished: 1
   clipPerLetter: {fileID: 8300000, guid: c41edc77538a38545b03981ae10eb87e, type: 3}

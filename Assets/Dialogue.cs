@@ -21,11 +21,13 @@ public class Dialogue : ScriptableObject
             audioSource.pitch = Random.Range(1.75f, 1.95f);
             audioSource.volume = Random.Range(0.15f, 0.25f);
             text.maxVisibleCharacters++;
-            if (text.text[i] == ' ' || text.text[i] == ',' || text.text[i] == '.') 
+            if (text.text[i] == ' ' || text.text[i] == ',' || text.text[i] == '.' || text.text[i] == ':') 
             {
                 audioSource.Stop();
                 if (text.text[i] == ',' || text.text[i] == '.')
                     yield return dialogueManager.StartCoroutine(YieldPause(timeWaitPerLetter * 2));
+                if (text.text[i] == ':')
+                    yield return dialogueManager.StartCoroutine(YieldPause(timeWaitPerLetter * 4));
             }
             else audioSource.Play();
         }
