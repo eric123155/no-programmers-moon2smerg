@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class SimpleAI : AI
 {
     public enum State { Idle = default, Wander, Follow }
-    [SerializeField] protected State state = default;
+    public State state = default;
 
     protected Transform _target = null;
     protected Vector3 _wanderPosition = new Vector3();

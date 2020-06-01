@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acef34a43cf1ad0448b21771e338ea2b, type: 3}
-  m_Name: Debug_A1_1
+  m_Script: {fileID: 11500000, guid: 6557fed3855e3fa46867c68b55f320d1, type: 3}
+  m_Name: New Book Question
   m_EditorClassIdentifier: 
-  content: Debug_A1 001
+  question: 
+  correctAnswer: {fileID: 0}
+  incorrectAnswers: []

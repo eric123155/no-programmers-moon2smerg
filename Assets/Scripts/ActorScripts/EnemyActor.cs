@@ -6,9 +6,11 @@ public class EnemyActor : Actor
 {
     [SerializeField] private GameStage deadPlayerStage = null;
 
+    public bool canKill = false;
+
     private void OnTriggerEnter(Collider other) 
     {
-        if (deadPlayerStage && other.gameObject.tag == "Player")
+        if (deadPlayerStage && canKill && other.gameObject.tag == "Player")
             deadPlayerStage.Invoke();
     }
 }

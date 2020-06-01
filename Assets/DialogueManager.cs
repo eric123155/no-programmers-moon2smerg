@@ -45,6 +45,16 @@ public class DialogueManager : MonoBehaviour
             _displayCoroutine = StartCoroutine(DisplayDialogues());
     }
 
+    public void Stop() 
+    {
+        if (_displayCoroutine != null) 
+        {
+            StopCoroutine(_displayCoroutine);
+            _fadeTransition.targetAlpha = 0;
+            _fadeTransition.Fade(2f);
+        }
+    }
+
     public IEnumerator DisplayDialogues()
     {
         _fadeTransition.targetAlpha = 1;

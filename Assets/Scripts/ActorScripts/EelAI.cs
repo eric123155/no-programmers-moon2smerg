@@ -19,6 +19,22 @@ public class EelAI : SimpleAI
         _bibleLectern = FindObjectOfType<BibleLecternController>(); 
     }
 
+    protected override IEnumerator IdleState()
+    {
+        if (_animator)
+            _animator.SetBool("Moving", false);
+
+        while (state == State.Idle)
+        {
+            Vector3 targetDirection = _target.position - transform.position;
+            float singleStep = 1 * Time.deltaTime;
+            Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, singleStep, 0.0f);
+            transform.rotation = Quaternion.LookRotation(newDirection);
+            yield return null;
+        }
+        NextState();
+    }
+
     protected override IEnumerator WanderState()
     {
         if (_animator)

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef1c26c4250875149a314fef45a07d9d, type: 3}
-  m_Name: EelDialogue_3
+  m_Name: EelDialogue_4
   m_EditorClassIdentifier: 
-  content: You are now to ripen your flesh and your psyche for the impending blood
-    sacrifice.
+  content: Locate the books and only then will you be granted the sweet escape of
+    death.
   timeWaitPerLetter: 0.05
   timeWaitAfterFinished: 1
   clipPerLetter: {fileID: 8300000, guid: c41edc77538a38545b03981ae10eb87e, type: 3}
