@@ -7,6 +7,7 @@ public class BookManager : MonoBehaviour
 {
     public GameObject bookPrefab = null;
     public BookQuestionDatabase questionDatabase;
+    public BookQuestion startQuestion;
 
     private static BookManager _instance = null;
     public static BookManager Instance { get { if (!_instance) _instance = FindObjectOfType<BookManager>(); return _instance; } }
@@ -30,6 +31,8 @@ public class BookManager : MonoBehaviour
 
         for (int i = 0; i < _spawnLocations.Count; i++)
             _spawnLocations[i].gameObject.SetActive(false);
+
+        _currentQuestion = startQuestion;
     }
 
     public void SpawnBook()
