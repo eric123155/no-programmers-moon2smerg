@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1c26c4250875149a314fef45a07d9d, type: 3}
+  m_Name: EelDialogue_1
+  m_EditorClassIdentifier: 
+  content: 'You have accrued a long list of delinquencies in your time in Lake Tilicum:'
+  timeWaitPerLetter: 0.05
+  timeWaitAfterFinished: 2.5
+  clipPerLetter: {fileID: 8300000, guid: c41edc77538a38545b03981ae10eb87e, type: 3}

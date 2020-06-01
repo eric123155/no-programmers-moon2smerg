@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5180e1f5ca5d94cbcd48c0997ea72d, type: 3}
+  m_Name: BookQuestionDatabase
+  m_EditorClassIdentifier: 
+  bookQuestions:
+  - {fileID: 11400000, guid: e39a003800b31e44d8ec452c3c2a3bba, type: 2}
+  - {fileID: 11400000, guid: 3d97a20f19164df449da56d3ab4ad66f, type: 2}
+  - {fileID: 11400000, guid: b82165cfb93c69d469f430c68a87467c, type: 2}

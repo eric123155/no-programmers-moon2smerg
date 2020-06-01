@@ -22,7 +22,7 @@ public class PlayerInput : MonoBehaviour
 
     void LateUpdate()
     {
-        if (BookOverlayManager.Instance.IsActive || JumpScareOverlayManager.Instance.IsActive)
+        if (BookOverlayManager.Instance.IsActive || JumpScareOverlayManager.Instance.IsActive || BookQuestionManager.Instance.IsActive)
         {
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;

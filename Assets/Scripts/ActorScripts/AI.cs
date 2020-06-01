@@ -11,7 +11,7 @@ public abstract class AI : MonoBehaviour
     protected Animator _animator = null;
     protected float _baseSpeed = 0;
 
-    private void Awake() 
+    protected virtual void Awake() 
     {
         _actor = GetComponent<Actor>();
         _agent = GetComponent<NavMeshAgent>();

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6557fed3855e3fa46867c68b55f320d1, type: 3}
+  m_Name: Sleeping_Q1
+  m_EditorClassIdentifier: 
+  question: When may one shut their eyes and lay for a good night's rest?
+  correctAnswer: {fileID: 11400000, guid: 34e92034469b80f4cb9f19627fa7a25d, type: 2}
+  incorrectAnswers:
+  - {fileID: 11400000, guid: d53e73a067341be4a94d91d189389665, type: 2}
+  - {fileID: 11400000, guid: 8e9d31928bb0a644e9b155a72be14930, type: 2}

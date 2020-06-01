@@ -18,9 +18,11 @@ public class CameraController : MonoBehaviour
         Cursor.visible = false;
     }
 
+    bool _debug = false;
+
     void Update()
     {
-        if (BookOverlayManager.Instance.IsActive || JumpScareOverlayManager.Instance.IsActive)
+        if (BookOverlayManager.Instance.IsActive || JumpScareOverlayManager.Instance.IsActive || BookQuestionManager.Instance.IsActive)
         {
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;

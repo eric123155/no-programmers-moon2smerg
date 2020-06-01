@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Book Answer", menuName = "Book Data/Book Answer")]
 public class BookAnswer : ScriptableObject
 {
-
+    [TextArea] public string content;
 }
